@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Engineering Series - Academic & Engineering Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans leading-relaxed min-h-screen">
+
+    <!-- Header / Navigation -->
+    <nav class="p-5 bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-code-compare text-indigo-500 text-xl"></i>
+                <h1 class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+                    Prompt Engineering Portfolio
+                </h1>
+            </div>
+            <span class="text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-3 py-1.5 rounded-full">
+                <i class="fa-brands fa-github mr-1"></i> GitHub Pages
+            </span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="text-center py-12 px-4 max-w-4xl mx-auto">
+        <div class="inline-block px-4 py-1.5 mb-4 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-indigo-300 text-xs font-semibold uppercase tracking-wider">
+            6-Part Comprehensive Report
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-extrabold text-white mb-4 tracking-tight">
+            การศึกษาเปรียบเทียบ <br>
+            <span class="bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400 bg-clip-text text-transparent">
+                Zero-shot vs Refined Prompting
+            </span>
+        </h2>
+        <p class="text-slate-400 text-sm sm:text-base max-w-2xl mx-auto">
+            รวบรวมและสรุปผลการประยุกต์ใช้ Prompt Engineering สำหรับงานวิศวกรรมและงานวิชาการ (กดปุ่มในแต่ละ Card เพื่อดูเนื้อหาบน Canva)
+        </p>
+    </header>
+
+    <!-- Projects Grid Section -->
+    <main class="max-w-6xl mx-auto px-4 pb-20 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Card 1: Image Generation -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">01. Image Gen</span>
+                    <i class="fa-solid fa-image text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">Visual Creation</h3>
+                <p class="text-xs text-slate-400 mb-4">DALL-E / Midjourney</p>
+                <div class="space-y-3 text-xs mb-6">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ภาพกว้าง ไร้มิติ ขาดรายละเอียดแสงและมุมกล้อง
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        กำหนด Style, Lighting, Composition และ Camera Angle ชัดเจน
+                    </div>
+                </div>
+            </div>
+            <!-- ปุ่มลิงก์ไปยัง Canva Slide หน้า 2-3 -->
+            <a href="https://www.canva.com" target="_blank" class="w-full text-center py-2 px-4 bg-indigo-600/20 hover:bg-indigo-600 text-indigo-300 hover:text-white border border-indigo-500/30 rounded-xl text-xs font-semibold transition flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>เปิดดูสไลด์แง่ที่ 1 ใน Canva</span>
+            </a>
+        </div>
+
+        <!-- Card 2: Desmos -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">02. Math Visualization</span>
+                    <i class="fa-solid fa-chart-line text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">Interactive Pulsing Heart</h3>
+                <p class="text-xs text-slate-400 mb-4">Desmos Calculator</p>
+                <div class="space-y-3 text-xs mb-6">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ได้สมการหัวใจแบบสถิต (Static) อยู่นิ่งๆ ไม่ขยับ
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        ใช้ Slider Parameter t ควบคุมการยืด-หดขยายตัว (Pulsing Heartbeat)
+                    </div>
+                </div>
+            </div>
+            <!-- ปุ่มลิงก์ไปยัง Canva Slide หน้า 4-5 -->
+            <a href="https://www.canva.com" target="_blank" class="w-full text-center py-2 px-4 bg-indigo-600/20 hover:bg-indigo-600 text-indigo-300 hover:text-white border border-indigo-500/30 rounded-xl text-xs font-semibold transition flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>เปิดดูสไลด์แง่ที่ 2 ใน Canva</span>
+            </a>
+        </div>
+
+        <!-- Card 3: Mermaid -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">03. Diagramming</span>
+                    <i class="fa-solid fa-diagram-project text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">User Registration Sequence</h3>
+                <p class="text-xs text-slate-400 mb-4">Mermaid.js</p>
+                <div class="space-y-3 text-xs mb-6">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ได้ผังงาน Flowchart เส้นตรงง่ายๆ ไม่เห็น Interaction
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        สร้าง Sequence Diagram แบ่ง Actors (FE, BE, DB) พร้อม Alt Block
+                    </div>
+                </div>
+            </div>
+            <!-- ปุ่มลิงก์ไปยัง Canva Slide หน้า 6-7 -->
+            <a href="https://www.canva.com" target="_blank" class="w-full text-center py-2 px-4 bg-indigo-600/20 hover:bg-indigo-600 text-indigo-300 hover:text-white border border-indigo-500/30 rounded-xl text-xs font-semibold transition flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>เปิดดูสไลด์แง่ที่ 3 ใน Canva</span>
+            </a>
+        </div>
+
+        <!-- Card 4: LaTeX / Overleaf -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">04. Academic Writing</span>
+                    <i class="fa-solid fa-file-pdf text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">21 Laws of Leadership Paper</h3>
+                <p class="text-xs text-slate-400 mb-4">Overleaf (LaTeX IEEE)</p>
+                <div class="space-y-3 text-xs mb-6">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ได้ข้อความพื้นฐาน ขาด Document Class และ Packages
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        จัดรูปแบบ IEEE Format 2 Columns พร้อมสมการ & ตาราง
+                    </div>
+                </div>
+            </div>
+            <!-- ปุ่มลิงก์ไปยัง Canva Slide หน้า 8-9 -->
+            <a href="https://www.canva.com" target="_blank" class="w-full text-center py-2 px-4 bg-indigo-600/20 hover:bg-indigo-600 text-indigo-300 hover:text-white border border-indigo-500/30 rounded-xl text-xs font-semibold transition flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>เปิดดูสไลด์แง่ที่ 4 ใน Canva</span>
+            </a>
+        </div>
+
+        <!-- Card 5: NotebookLM -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">05. Content Summarization</span>
+                    <i class="fa-solid fa-box-archive text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">Slide Deck Extraction</h3>
+                <p class="text-xs text-slate-400 mb-4">NotebookLM</p>
+                <div class="space-y-3 text-xs mb-6">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ได้ย่อหน้ารวมเนื้อหายาวพืด (Paragraph Summary)
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        สกัดเป็นโครงร่าง 5 สไลด์ พร้อม Bullet Points และ Speaker Notes
+                    </div>
+                </div>
+            </div>
+            <!-- ปุ่มลิงก์ไปยัง Canva Slide หน้า 10-11 -->
+            <a href="https://www.canva.com" target="_blank" class="w-full text-center py-2 px-4 bg-indigo-600/20 hover:bg-indigo-600 text-indigo-300 hover:text-white border border-indigo-500/30 rounded-xl text-xs font-semibold transition flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                <span>เปิดดูสไลด์แง่ที่ 5 ใน Canva</span>
+            </a>
+        </div>
+
+        <!-- Card 6: GitHub Pages -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">06. Web Portfolio</span>
+                    <i class="fa-solid fa-globe text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">Single-File Web Deployment</h3>
+                <p class="text-xs text-slate-400 mb-4">GitHub Pages</p>
+                <div class="space-y-3 text-xs mb-6">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ได้ HTML เปลือยๆ ตัวอักษรสีดำบนพื้นขาว
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        ได้เว็บ Modern Dark Tone มี Responsive Grid เชื่อมโยงทุกงาน
+                    </div>
+                </div>
+            </div>
+            <!-- ปุ่มลิงก์สไลด์รวมทั้งหมดใน Canva -->
+            <a href="https://www.canva.com" target="_blank" class="w-full text-center py-2 px-4 bg-emerald-600/20 hover:bg-emerald-600 text-emerald-300 hover:text-white border border-emerald-500/30 rounded-xl text-xs font-semibold transition flex items-center justify-center space-x-2">
+                <i class="fa-solid fa-presentation-screen mr-1"></i>
+                <span>เปิดดู Canva Presentation ทั้งหมด</span>
+            </a>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 border-t border-slate-900 text-slate-500 text-xs">
+        <p>© 2026 Arayan Tepabutr. Prompt Engineering for Engineering & Academic Tasks.</p>
+    </footer>
+
+</body>
+</html>
