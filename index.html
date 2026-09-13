@@ -3,58 +3,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prompt Engineering Portfolio - อารยัน เทพบุตร</title>
+    <title>Prompt Engineering Series - Academic & Engineering Portfolio</title>
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body class="bg-slate-900 text-white font-sans">
-    <nav class="p-5 bg-slate-800 flex justify-between items-center sticky top-0 z-50 border-b border-slate-700">
-        <h1 class="text-xl font-bold text-indigo-400"><i class="fa-solid fa-brain mr-2"></i>Prompt Lab</h1>
-        <div class="space-x-4 text-sm">
-            <a href="#art" class="hover:text-indigo-400">AI Art</a>
-            <a href="#math" class="hover:text-indigo-400">Desmos</a>
-            <a href="#mermaid" class="hover:text-indigo-400">Mermaid</a>
-            <a href="#latex" class="hover:text-indigo-400">LaTeX</a>
-            <a href="#notebook" class="hover:text-indigo-400">NotebookLM</a>
+<body class="bg-slate-950 text-slate-100 font-sans leading-relaxed min-h-screen">
+
+    <!-- Header / Navigation -->
+    <nav class="p-5 bg-slate-900/80 backdrop-blur-md border-b border-slate-800 sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-code-compare text-indigo-500 text-xl"></i>
+                <h1 class="text-xl font-bold bg-gradient-to-r from-indigo-400 to-cyan-400 bg-clip-text text-transparent">
+                    Prompt Engineering Portfolio
+                </h1>
+            </div>
+            <span class="text-xs font-semibold bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-3 py-1.5 rounded-full">
+                <i class="fa-brands fa-github mr-1"></i> GitHub Pages
+            </span>
         </div>
     </nav>
 
-    <header class="text-center py-12 px-4 bg-gradient-to-b from-slate-800 to-slate-900">
-        <h2 class="text-3xl font-extrabold mb-2">Generative AI Showcase</h2>
-        <p class="text-slate-300">นางสาว อารยัน เทพบุตร | รหัสนักศึกษา 2610711302018</p>
-        <p class="text-indigo-400 text-sm mt-1">สาขาวิศวกรรมคอมพิวเตอร์ คณะวิศวกรรมศาสตร์</p>
+    <!-- Hero Section -->
+    <header class="text-center py-16 px-4 max-w-4xl mx-auto">
+        <div class="inline-block px-4 py-1.5 mb-4 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-indigo-300 text-xs font-semibold uppercase tracking-wider">
+            6-Part Comprehensive Report
+        </div>
+        <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-6 tracking-tight">
+            การศึกษาเปรียบเทียบ <br>
+            <span class="bg-gradient-to-r from-indigo-400 via-sky-400 to-emerald-400 bg-clip-text text-transparent">
+                Zero-shot vs Refined Prompting
+            </span>
+        </h2>
+        <p class="text-slate-400 text-base sm:text-lg max-w-2xl mx-auto">
+            รวบรวมและสรุปผลการประยุกต์ใช้ Prompt Engineering สำหรับงานวิศวกรรมและงานวิชาการ ครอบคลุมทั้ง 6 โดเมนหลัก
+        </p>
     </header>
 
-    <section class="max-w-6xl mx-auto px-4 py-8 grid grid-cols-1 md:grid-cols-3 gap-6">
-        <div id="art" class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg">
-            <span class="text-xs bg-pink-500/20 text-pink-400 px-3 py-1 rounded-full">Aspect 1</span>
-            <h3 class="text-xl font-bold mt-3 mb-2">AI Image Generation</h3>
-            <p class="text-slate-400 text-sm mb-4">สวัสดีวันจันทร์ สไตล์จิตรกรรมไทยโบราณประยุกต์</p>
-        </div>
-        <div id="math" class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg">
-            <span class="text-xs bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full">Aspect 2</span>
-            <h3 class="text-xl font-bold mt-3 mb-2">Desmos Math Model</h3>
-            <p class="text-slate-400 text-sm mb-4">กราฟรูปหัวใจเต้นได้ด้วย Parameter Slider (t)</p>
-        </div>
-        <div id="mermaid" class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg">
-            <span class="text-xs bg-emerald-500/20 text-emerald-400 px-3 py-1 rounded-full">Aspect 3</span>
-            <h3 class="text-xl font-bold mt-3 mb-2">Mermaid Diagram</h3>
-            <p class="text-slate-400 text-sm mb-4">Sequence Diagram ระบบ User Registration</p>
-        </div>
-        <div id="latex" class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg">
-            <span class="text-xs bg-amber-500/20 text-amber-400 px-3 py-1 rounded-full">Aspect 4</span>
-            <h3 class="text-xl font-bold mt-3 mb-2">LaTeX Overleaf Paper</h3>
-            <p class="text-slate-400 text-sm mb-4">บทความวิชาการภาษาไทย IEEE Format 2 คอลัมน์</p>
-        </div>
-        <div id="notebook" class="bg-slate-800 p-6 rounded-xl border border-slate-700 shadow-lg">
-            <span class="text-xs bg-purple-500/20 text-purple-400 px-3 py-1 rounded-full">Aspect 5</span>
-            <h3 class="text-xl font-bold mt-3 mb-2">NotebookLM Summary</h3>
-            <p class="text-slate-400 text-sm mb-4">โครงร่าง Presentation เรื่อง AI ในงานวิศวกรรมซอฟต์แวร์</p>
-        </div>
-    </section>
+    <!-- Projects Grid Section -->
+    <main class="max-w-6xl mx-auto px-4 pb-20 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
 
-    <footer class="text-center py-6 border-t border-slate-800 text-slate-500 text-sm">
-        <p>© 2026 Arayan Thepbut | Hosted on GitHub Pages</p>
+        <!-- Card 1: Image Generation -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">01. Image Gen</span>
+                    <i class="fa-solid fa-image text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">Visual Creation</h3>
+                <p class="text-xs text-slate-400 mb-4">DALL-E / Midjourney</p>
+                <div class="space-y-3 text-xs">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ภาพที่ได้ขาดรายละเอียด ทรงพลังน้อย และปรับมุมกล้องไม่ได้
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        กำหนด Style, Lighting, Composition และ Camera Angle ชัดเจน
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2: Desmos -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">02. Math Visualization</span>
+                    <i class="fa-solid fa-chart-line text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">Interactive Pulsing Heart</h3>
+                <p class="text-xs text-slate-400 mb-4">Desmos Calculator</p>
+                <div class="space-y-3 text-xs">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ได้สมการหัวใจแบบสถิต (Static) อยู่นิ่งๆ ไม่ขยับ
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        ใช้ Slider Parameter <code>t</code> ควบคุมการยืด-หดขยายตัว (Pulsing Heartbeat)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3: Mermaid -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">03. Diagramming</span>
+                    <i class="fa-solid fa-diagram-project text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">User Registration Sequence</h3>
+                <p class="text-xs text-slate-400 mb-4">Mermaid.js</p>
+                <div class="space-y-3 text-xs">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ได้ผังงาน Flowchart เส้นตรงง่ายๆ ไม่เห็น Interaction
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        สร้าง Sequence Diagram แบ่ง Actors (FE, BE, DB) พร้อม Alt Block เช็ค Error
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4: LaTeX / Overleaf -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">04. Academic Writing</span>
+                    <i class="fa-solid fa-file-pdf text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">21 Laws of Leadership Paper</h3>
+                <p class="text-xs text-slate-400 mb-4">Overleaf (LaTeX)</p>
+                <div class="space-y-3 text-xs">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ได้ข้อความพื้นฐาน ขาด Document Class และ Packages
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        จัดรูปแบบ IEEE Format 2 Columns พร้อมสมการ Law of the Lid & ตาราง
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5: NotebookLM -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">05. Content Summarization</span>
+                    <i class="fa-solid fa-box-archive text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">Slide Deck Extraction</h3>
+                <p class="text-xs text-slate-400 mb-4">NotebookLM</p>
+                <div class="space-y-3 text-xs">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ได้ย่อหน้ารวมเนื้อหายาวพืด (Paragraph Summary)
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        สกัดเป็นโครงร่าง 5 สไลด์ พร้อม Bullet Points และ Speaker Notes
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 6: GitHub Pages -->
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:border-indigo-500/50 transition-all duration-300 shadow-xl flex flex-col justify-between">
+            <div>
+                <div class="flex justify-between items-start mb-4">
+                    <span class="text-xs font-bold text-indigo-400 bg-indigo-950/80 px-2.5 py-1 rounded-md border border-indigo-800/50">06. Web Portfolio</span>
+                    <i class="fa-solid fa-globe text-slate-600"></i>
+                </div>
+                <h3 class="text-lg font-bold text-white mb-1">Single-File Web Deployment</h3>
+                <p class="text-xs text-slate-400 mb-4">GitHub Pages</p>
+                <div class="space-y-3 text-xs">
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-red-500/20">
+                        <span class="text-red-400 font-bold block mb-1"><i class="fa-solid fa-xmark mr-1"></i> Zero-shot</span>
+                        ได้ HTML เปลือยๆ ตัวอักษรสีดำบนพื้นขาว ไม่มีความสวยงาม
+                    </div>
+                    <div class="bg-slate-950/80 p-3 rounded-xl border border-emerald-500/20">
+                        <span class="text-emerald-400 font-bold block mb-1"><i class="fa-solid fa-check mr-1"></i> Refined Prompt</span>
+                        ได้เว็บ Modern Dark Tone มี Responsive Grid พร้อม Publish บน GitHub Pages
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-center py-8 border-t border-slate-900 text-slate-500 text-xs">
+        <p>© 2026 Arayan Tepabutr. Prompt Engineering for Engineering & Academic Tasks.</p>
     </footer>
+
 </body>
 </html>
